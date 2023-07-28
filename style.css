@@ -1,0 +1,162 @@
+/*start basices*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear
+{
+    display: none;
+}
+.theBtn{
+    background-color:#528df8;
+    color:#fff;
+    margin-top:1rem;
+    border-radius: 15px;
+    border: 0;
+    width: 80%;
+    padding: 5px;
+    outline: 0;
+    transition: 0.7s;
+}
+.theBtn:hover{
+    background-color:#3277f7;
+    color:#fff;
+
+}
+.alert{
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 15px;
+}
+.passDiv{
+    position: relative;
+}
+.passDiv button{
+    border: 0;
+    position: absolute;
+    background-color: #fff;
+    top: 6px;
+    right: 75px;
+}
+
+/*end basices*/
+/*start login page*/
+.login{
+    background: url('cover-image.png');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.main{
+    width: 50%;
+    height: auto;
+    background-color: #e6e4e4;
+    border-radius: 20px;
+}
+.main h3{
+    margin-top: 2rem;
+    color: #528df8;
+}
+.main label{
+    margin-left: 10%;
+}
+.main input{
+    border-radius: 15px;
+    border: 0;
+    width: 80%;
+    padding: 5px;
+    margin-left: 10%;
+    outline: 0;
+}
+.main input:hover:not([type=submit]),
+.main input:focus:not([type=submit]){
+    outline: #528df8 solid 1px;
+}
+.main p{
+    margin: 1rem;
+    text-align:center!important;
+    color: #7D757D;
+}
+.main p::after,
+.main p::before{
+    content: "";
+    display: inline-block;
+    border:1px solid #7D757D;
+    margin: 0.5rem;
+    margin-bottom: 3px;
+    width: 90px;
+}
+.mainA{
+    text-align:center!important;
+    margin-bottom: 15px;
+}
+.main a{
+    text-decoration: none;
+    color: #528df8;
+}
+@media screen and (max-width: 800px) {
+    .main{
+        width: 80%;
+    }
+    .main p::before,
+    .main p::after{
+        width: 20px;
+    }
+    .main p{
+        font-size: 9px;
+    }
+    .passDiv button{
+        right: 65px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .passDiv button{
+        right: 40px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .passDiv button{
+        right: 22px;
+    }
+}
+.main .forgetLink{
+    margin-right: 10%;
+    margin-top: 2%;
+}
+
+/*end login page*/
+/*start welcome page*/
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(cover-image.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.welcome .wecomeMainHeading{
+    background-color: #e6e4e4;
+    padding: 25px;
+    text-transform: capitalize;
+    border-radius: 15px;
+}
+/*end welcome page*/
+/*start sign page*/
+.sign{
+    background: url('cover-image.png');
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*end sign page*/
